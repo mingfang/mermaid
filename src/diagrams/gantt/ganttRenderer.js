@@ -1,6 +1,6 @@
 var gantt = require('./parser/gantt').parser;
 gantt.yy = require('./ganttDb');
-var d3 = require('../../d3');
+var d3 = require('../../myd3');
 var moment = require('moment');
 //var log = require('../../logger').create();
 

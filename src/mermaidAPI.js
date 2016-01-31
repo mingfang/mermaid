@@ -31,7 +31,7 @@ var ganttDb = require('./diagrams/gantt/ganttDb');
 var classParser = require('./diagrams/classDiagram/parser/classDiagram');
 var classRenderer = require('./diagrams/classDiagram/classRenderer');
 var classDb = require('./diagrams/classDiagram/classDb');
-var d3 = require('./d3');
+var d3 = require('./myd3');
 
 SVGElement.prototype.getTransformToElement = SVGElement.prototype.getTransformToElement || function(toElement) {
         return toElement.getScreenCTM().inverse().multiply(this.getScreenCTM());

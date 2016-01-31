@@ -4,7 +4,7 @@
 var Logger = require('../../logger');
 var log = new Logger.Log();
 
-var d3 = require('../../d3');
+var d3 = require('../../myd3');
 var vertices = {};
 var edges = [];
 var classes = [];

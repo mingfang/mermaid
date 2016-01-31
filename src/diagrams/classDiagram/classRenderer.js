@@ -5,7 +5,7 @@
 var cd = require('./parser/classDiagram').parser;
 var cDDb = require('./classDb');
 cd.yy = cDDb;
-var d3 = require('../../d3');
+var d3 = require('../../myd3');
 var Logger = require('../../logger');
 var dagre = require('dagre');
 var log = new Logger.Log();

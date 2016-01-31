@@ -1,15 +1,15 @@
 /* global window */
 //log.debug('Setting up d3');
-var d3;
+var d3 = require('d3');
 
-if (require) {
-  try {
-    d3 = require('d3');
-  } catch (e) {
-  	//log.debug('Exception ... but ok');
-  	//log.debug(e);
-  }
-}
+// if (require) {
+//   try {
+//     d3 = require('d3');
+//   } catch (e) {
+//   	//log.debug('Exception ... but ok');
+//   	//log.debug(e);
+//   }
+// }
 
 //log.debug(d3);
 

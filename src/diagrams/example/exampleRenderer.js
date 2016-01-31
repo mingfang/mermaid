@@ -3,7 +3,7 @@
  */
 var db = require('./exampleDb');
 var exampleParser = require('./parser/example.js');
-var d3 = require('../../d3');
+var d3 = require('../../myd3');
 var Logger = require('../../logger');
 var log = new Logger.Log();
 

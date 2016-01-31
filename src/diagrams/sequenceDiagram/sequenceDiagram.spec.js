@@ -1,4 +1,4 @@
-var proxyquire = require('proxyquire');
+// var proxyquire = require('proxyquire');
 /**
  * Created by knut on 14-11-18.
  */
@@ -17,11 +17,11 @@ var d3 = {
     }
 };
 //var sd = proxyquire('./sequenceRenderer', { './d3': d3 });
-var sd = proxyquire('./sequenceRenderer', { '../../d3': d3 });
+// var sd = proxyquire('./sequenceRenderer', { '../../d3': d3 });
 
 //
 //
-//var sd = require('./sequenceRenderer');
+var sd = require('./sequenceRenderer');
 
 var str;
 describe('when parsing a sequenceDiagram',function() {

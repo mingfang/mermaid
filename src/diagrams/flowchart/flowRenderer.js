@@ -4,8 +4,8 @@
 var graph = require('./graphDb');
 var flow = require('./parser/flow');
 var dot = require('./parser/dot');
-var d3 = require('../../d3');
-var dagreD3 = require('./dagre-d3');
+var d3 = require('../../myd3');
+var dagreD3 = require('./my-dagre-d3');
 var Logger = require('../../logger');
 var log = new Logger.Log();
 
@@ -134,7 +134,7 @@ exports.addVertices = function (vert, g) {
 exports.addEdges = function (edges, g) {
     var cnt=0;
     var aHead;
-    
+
     var defaultStyle;
     if(typeof edges.defaultStyle !== 'undefined'){
         defaultStyle = edges.defaultStyle.toString().replace(/,/g , ';');
@@ -450,7 +450,7 @@ exports.draw = function (text, id,isDot) {
 
     // Index nodes
     graph.indexNodes('subGraph'+i);
-    
+
     for(i=0;i<subGraphs.length;i++){
         subG = subGraphs[i];
 
